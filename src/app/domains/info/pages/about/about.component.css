@@ -1,8 +1,7 @@
 /* Estilos para las secciones */
 section {
   background-color: #fff;
-  margin: 20px;
-  padding: 20px;
+  padding: 2rem 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
