@@ -10,10 +10,6 @@ export const routes: Routes = [
       component: LayoutComponent,
       children: [
         {
-            path: '',
-            component: AboutComponent
-        },
-        {
             path: 'about',
             component: AboutComponent
         },
