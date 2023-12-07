@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { AboutComponent } from './../../../info/pages/about/about.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [AboutComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
