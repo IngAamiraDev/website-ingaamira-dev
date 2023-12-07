@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-home',
   standalone: true,
   imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class AboutComponent {
+export class HomeComponent {
 
   constructor (private titleService: Title) {
-    this.titleService.setTitle('About Me')
+    this.titleService.setTitle('Home')
   }
 
 }
