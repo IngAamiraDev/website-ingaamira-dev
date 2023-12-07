@@ -1,14 +1,49 @@
-<div class="pills-box">
-  <div class="pills-item" tabindex="0">
-    <a>Home</a>
+<section>
+  <div class="pills-box">
+    <div class="pills-item" tabindex="0">
+      <a
+        routerLink="/"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="block navigation-link"
+        aria-current="page"
+      >Home</a>
+    </div>
+    <div class="pills-item" tabindex="0">
+      <a
+        routerLink="/about"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="block navigation-link"
+        aria-current="page"
+      >About</a>
+    </div>
+    <div class="pills-item" tabindex="0">
+      <a
+        routerLink="/portfolio"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="block navigation-link"
+        aria-current="page"
+      >Portfolio</a>
+    </div>
+    <div class="pills-item" tabindex="0">
+      <a
+        routerLink="/resume"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="block navigation-link"
+        aria-current="page"
+      >Resume</a>
+    </div>
+    <div class="pills-item" tabindex="0">
+      <a
+        routerLink="/contact"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="block navigation-link"
+        aria-current="page"
+      >Contact</a>
+    </div>
   </div>
-  <div class="pills-item" tabindex="0">
-    <a>Portfolio</a>
-  </div>
-  <div class="pills-item" tabindex="0">
-    <a>Rersume</a>
-  </div>
-  <div class="pills-item" tabindex="0">
-    <a>Contact</a>
-  </div>
-</div>
+</section>

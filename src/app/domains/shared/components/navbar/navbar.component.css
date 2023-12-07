@@ -4,25 +4,27 @@
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 35px
+  margin-top: 35px;
 }
 
 .pills-item {
-  color: #794999;
-  border-radius: 16px;
-  cursor: pointer;
   margin-right: 15px;
   margin-bottom: 25px;
-  padding: 3px 0;
-  transition: all ease .2s
 }
 
-.pills-item:hover {
-  color: #fff;
+.navigation-link {
+  text-decoration: none;
+  color: #794999;
   padding: 3px 8px;
-  background-color: #713499
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all ease .2s;
+  font-size: 24px;
 }
 
-.pills-item a {
-  font-size: 28px;
+.navigation-link:hover,
+.active-link {
+  color: #fff;
+  background-color: #7134F0;
+  font-weight: bold;
 }
