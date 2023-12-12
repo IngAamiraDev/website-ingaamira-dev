@@ -2,3 +2,13 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+element.style {
+  border-top-width: 12px;
+  margin-top: 12px;
+}

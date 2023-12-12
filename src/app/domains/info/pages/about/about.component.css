@@ -1,21 +1,21 @@
-/* Estilos para las secciones */
-section {
-  background-color: #fff;
-  padding: 2rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
+.about {
+  background-color:#fff;
+  padding: 10px;
 }
 
-section h2 {
+.about h2 {
   font-size: 24px;
   color: #333;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-section p {
+.about p {
   font-size: 20px;
   color: #666;
   line-height: 1.5;
+  padding: 10px;
+  text-align: left;
 }

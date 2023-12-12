@@ -1,60 +1,32 @@
-:root {
-  --primary-color: blue;
-  --text-color: #333;
-  --background-color: #fff;
-}
-
-.tag{
+.tag {
   padding: 0 20px;
   height: 30px;
-  width: fit-content;
   font-size: 14px;
   line-height: 30px;
   border-radius: 25px;
   background-color: blue;
   color: white;
-
+  margin-right: 8px;
 }
 
-section {
-  background-color: var(--background-color);
-  padding: 2rem 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
+.card-body {
+  background-color:#fff;
+  padding: 10px;
 }
 
-section h5 {
+.card-body h5 {
   font-size: 24px;
-  color: var(--text-color);
-  text-align: left;
+  color: #333;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
-section p {
+.card-body p {
   font-size: 20px;
   color: #666;
   line-height: 1.5;
-}
-
-.card-footer {
-  border-top: 1px solid #ddd;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 10px;
-  background-color: var(--background-color);
-}
-
-.card-footer p {
-  margin: 0;
-}
-
-.card-footer a {
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-.card-footer a:hover {
-  color: #ffd700;
-  text-decoration: none;
+  padding: 10px;
+  text-align: left;
 }
