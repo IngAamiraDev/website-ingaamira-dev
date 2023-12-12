@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../../../shared/models/project';
-import { Tag } from '../../../shared/models/tag';
+import { ProjectsService } from '../../../shared/services/projects.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -12,23 +12,15 @@ import { Tag } from '../../../shared/models/tag';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
 
-  projects: Project[] = [
+  projects = {} as Project[];
 
-    { id: 0,
-      name: 'E-ShopApp',
-      summary: 'E-ShopApp es una aplicación de comercio electrónico desarrollada en Java con el framework Spring Boot. La aplicación permite a los usuarios explorar y comprar productos en línea, organizados en categorías.',
-      description: '',
-      projectLink: 'https://github.com/IngAamira/E-ShopApp',
-      pictures: [],
-      tags: [Tag.JAVA, Tag.SPRING]
-    }
-
-  ];
-
-  constructor (private titleService: Title) {
+  constructor (private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Portfolio')
+  }
+  ngOnInit(): void {
+    this.projects = this.projectService.GetProjects();
   }
 
 }
