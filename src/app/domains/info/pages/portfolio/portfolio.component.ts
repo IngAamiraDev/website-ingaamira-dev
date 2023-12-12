@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../../../shared/models/project';
+import { Tag } from '../../../shared/models/tag';
 
 @Component({
   selector: 'app-portfolio',
@@ -19,7 +20,7 @@ export class PortfolioComponent {
     description: '',
     projectLink: '',
     pictures: [],
-    tags: ['Angular', 'TypeScript']
+    tags: [Tag.ANGULAR, Tag.TYPESCRIPT]
   };
 
   constructor (private titleService: Title) {

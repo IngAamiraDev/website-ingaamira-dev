@@ -4,12 +4,11 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './../../../shared/components/header/header.component';
 import { NavbarComponent } from './../../../shared/components/navbar/navbar.component';
 import { FooterComponent } from './../../../shared/components/footer/footer.component';
-import { ParticleBackgroundComponent } from './../../../shared/components/particle-background/particle-background.component';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RouterModule, HeaderComponent, NavbarComponent, FooterComponent, ParticleBackgroundComponent],
+  imports: [RouterModule, HeaderComponent, NavbarComponent, FooterComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })
