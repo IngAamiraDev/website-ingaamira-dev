@@ -12,3 +12,15 @@ element.style {
   border-top-width: 12px;
   margin-top: 12px;
 }
+
+.tag {
+  padding: 0 20px;
+  height: 30px;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+  margin-right: 8px;
+}

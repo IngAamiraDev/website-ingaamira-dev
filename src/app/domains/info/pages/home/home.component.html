@@ -6,7 +6,7 @@
     <div class="col-lg shadow border m-1">
       <div class="text-center">
         <h2>¿Quién soy?</h2>
-        <img src="../../../../../assets/imgs/Perfil.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
+        <img src="../../../../../assets/imgs/home/profile.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
         <p style="text-align: left; margin-top: 10px;">
           En un mundo donde los datos son el recurso más valioso, tengo la experiencia para diseñar, desarrollar y mantener almacenes de datos sólidos y eficientes. Mi enfoque es la orquestación experta de datos y el uso de tecnologías de vanguardia para impulsar la inteligencia empresarial y la toma de decisiones basadas en datos sólidos.
         </p>
@@ -25,6 +25,17 @@
         <h2>Featured Project</h2>
         <h4>{{featureProject.name}}</h4>
       </div>
+
+      <carousel>
+        <div class="text-center">
+          <div *ngFor="let picture of featureProject.pictures">
+            <slide><img src={{picture}} alt="slide" width="300" height="220" display="block"></slide>
+          </div>
+        </div>
+      </carousel>
+
+      <p class="mt-2">{{featureProject.summary}}</p>
+      <p>Vist the <a [routerLink]="'/portfolio'" aria-current="page" >Portfolio</a> section to learn more!</p>
     </div>
 
   </div>
