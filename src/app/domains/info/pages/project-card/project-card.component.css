@@ -8,25 +8,3 @@
   color: white;
   margin-right: 8px;
 }
-
-.card-body {
-  background-color:#fff;
-  padding: 10px;
-}
-
-.card-body h5 {
-  font-size: 24px;
-  color: #333;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.card-body p {
-  font-size: 20px;
-  color: #666;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: left;
-}
