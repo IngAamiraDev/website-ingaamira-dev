@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 import { ProjectModalComponent } from './domains/info/pages/project-modal/project-modal.component';
 
@@ -25,6 +26,7 @@ import { ProjectModalComponent } from './domains/info/pages/project-modal/projec
     ModalModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
+    AccordionModule.forRoot(),
     FormsModule
   ],
   providers: [],

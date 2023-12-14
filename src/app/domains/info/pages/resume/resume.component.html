@@ -1,1 +1,144 @@
-<p>resume works!</p>
+<div class="container text-center" style="height: 380px; padding-left: 100px; padding-right: 100px;">
+  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Work Experience</div>
+
+          <div style="width: 10.95px;">
+            <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+            <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left;">
+          <h2 class="mb-0">Desarrollador de Software</h2>
+          <h3 class="text-primary">IAS Software</h3>
+          <h4 class="text-secondary">Date: 12/2022 - (Actual)</h4>
+          <ul>
+            <li>Desarrollo y mantenimiento de aplicaciones backend utilizando Java y Spring Boot.</li>
+            <li>Competencias sólidas en la inyección de dependencias para garantizar la modularidad y la facilidad de mantenimiento.</li>
+            <li>Desarrollo y mantenimiento de aplicaciones frontend utilizando Html, CSS y Angular.</li>
+            <li>Competencias sólidas en cumplir con el principio de una sola responsabilidad.</li>
+            <li>Implementación de servicios API REST para la exposición de funcionalidades clave, siguiendo los estándares de diseño y buenas prácticas.</li>
+            <li>Acceso eficiente a bases de datos utilizando tecnologías como JDBC y JPA para garantizar la integridad y la gestión de datos.</li>
+            <li>Colaboración activa en la exposición y consumo de servicios web, facilitando la integración de sistemas externos y mejorando la eficiencia operativa.</li>
+            <li>Competencias sólidas en programación orientada a objetos (POO) y familiaridad con conceptos de programación funcional y reactiva.</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isSectorExperienceOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Sector Experience</div>
+
+          <div style="width: 10.95px;">
+            <div *ngIf="!isSectorExperienceOpen" style="color: white;">></div>
+            <div *ngIf="isSectorExperienceOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left;">
+          <ul>
+            <li>Financial</li>
+            <li>Retail</li>
+            <li>Transport</li>
+            <li>Telecomunications</li>
+            <li>Tech</li>
+            <li>Tourism</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Education</div>
+
+          <div style="width: 10.95px;">
+            <div *ngIf="!isEducationOpen" style="color: white;">></div>
+            <div *ngIf="isEducationOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left;">
+          <h2 class="mb-0">Business Intelligence Specialist</h2>
+          <h3 class="text-primary">Católica del Norte Fundación Universitaria</h3>
+          <h4 class="text-secondary">Date: 07/2018 - 08/2019</h4>
+        </div>
+        <hr>
+        <div style="text-align: left;">
+          <h2 class="mb-0">Barchelor's of Computer Engineer</h2>
+          <h3 class="text-primary">Católica del Norte Fundación Universitaria</h3>
+          <h4 class="text-secondary">Date: 12/2014 - 11/2017</h4>
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Skills</div>
+
+          <div style="width: 10.95px;">
+            <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+            <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>Programing Languages:</h3>
+            <ul>
+              <li>Java</li>
+              <li>Python</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Frameworks:</h3>
+            <ul>
+              <li>Spring</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>Other Skills:</h3>
+            <ul>
+              <li>Source Control via Git</li>
+              <li>MVC Architecture</li>
+              <li>Agile Development</li>
+            </ul>
+          </div>
+
+        </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isLanguagesOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">Languages</div>
+
+          <div style="width: 10.95px;">
+            <div *ngIf="!isLanguagesOpen" style="color: white;">></div>
+            <div *ngIf="isLanguagesOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left;">
+          <ul>
+            <li>Native Spanish</li>
+            <li>Enlglish Level A2/B1</li>
+          </ul>
+        </div>
+      </accordion-group>
+
+    </accordion>
+  </div>
+</div>
