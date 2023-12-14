@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { ProjectModalComponent } from './domains/info/pages/project-modal/project-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { HomeComponent } from './domains/info/pages/home/home.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+
+import { ProjectModalComponent } from './domains/info/pages/project-modal/project-modal.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     ProjectModalComponent
   ],
   imports: [
@@ -20,7 +23,9 @@ import { HomeComponent } from './domains/info/pages/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
