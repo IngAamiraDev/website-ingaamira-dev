@@ -16,7 +16,10 @@ export class ProjectsService {
       description: '',
       projectLink: 'https://github.com/IngAamira/E-ShopApp',
       pictures: ["../../../../../assets/imgs/projects/eshopapp/folder.png"],
-      tags: [Tag.JAVA, Tag.SPRING]
+      tags: [
+        Tag.JAVA,
+        Tag.SPRING
+      ]
     },
     { id: 1,
       name: 'TechSolutions',
@@ -25,11 +28,49 @@ export class ProjectsService {
       projectLink: 'https://github.com/IngAamira/TechSolutions',
       pictures: ["../../../../../assets/imgs/projects/techsolutions/folder.png"],
       tags: [Tag.JAVA, Tag.SPRING]
+    },
+    { id: 2,
+      name: 'To-Do App',
+      summary: 'This is a simple To-Do application project developed in Angular.',
+      description: '',
+      projectLink: 'https://ingaamira.github.io/todo-app/',
+      pictures: [
+        "../../../../../assets/imgs/projects/todo-app/home.png",
+        "../../../../../assets/imgs/projects/todo-app/task.png",
+        "../../../../../assets/imgs/projects/todo-app/filter.png"
+      ],
+      tags: [
+        Tag.TYPESCRIPT,
+        Tag.ANGULAR,
+        Tag.HTML,
+        Tag.CSS,
+        Tag.BOOTSTRAP
+      ]
+    },
+    { id: 3,
+      name: 'Gifs App',
+      summary: 'This is an Angular application that allows users to search and view gifs using the Giphy API.',
+      description: '',
+      projectLink: 'https://ingaamira.github.io/gifs-app/',
+      pictures: [
+        "../../../../../assets/imgs/projects/gifs-app/home.png",
+        "../../../../../assets/imgs/projects/gifs-app/search.png",
+        "../../../../../assets/imgs/projects/gifs-app/filter.png"
+      ],
+      tags: [
+        Tag.TYPESCRIPT,
+        Tag.ANGULAR,
+        Tag.HTML,
+        Tag.CSS,
+        Tag.BOOTSTRAP
+      ]
     }
 
   ];
 
-  constructor() { }
+  constructor() {
+
+  }
 
   GetProjects() {
     return this.projects;
