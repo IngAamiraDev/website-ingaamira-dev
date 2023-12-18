@@ -12,7 +12,7 @@ export class ProjectsService {
 
     { id: 0,
       name: 'TechSolutions',
-      summary: 'Este es un proyecto de comercio electrónico desarrollado en Java utilizando Spring Boot. La aplicación implementa funcionalidades clave para gestionar productos, pedidos, usuarios y el proceso de compra en línea.',
+      summary: 'This is an e-commerce project developed in Java using Spring Boot. The application implements key functionalities for managing products, orders, users, and the online purchasing process.',
       description: '',
       projectLink: 'https://github.com/IngAamira/TechSolutions',
       pictures: [

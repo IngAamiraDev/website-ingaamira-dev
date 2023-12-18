@@ -11,13 +11,9 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 
-import { ProjectModalComponent } from './domains/info/pages/project-modal/project-modal.component';
-
-
 @NgModule({
   declarations: [
-    AppComponent,
-    ProjectModalComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
