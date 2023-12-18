@@ -11,25 +11,24 @@ export class ProjectsService {
   projects: Project[] = [
 
     { id: 0,
-      name: 'E-ShopApp',
-      summary: 'E-ShopApp es una aplicación de comercio electrónico desarrollada en Java con el framework Spring Boot. La aplicación permite a los usuarios explorar y comprar productos en línea, organizados en categorías.',
-      description: '',
-      projectLink: 'https://github.com/IngAamira/E-ShopApp',
-      pictures: ["../../../../../assets/imgs/projects/eshopapp/folder.png"],
-      tags: [
-        Tag.JAVA,
-        Tag.SPRING
-      ]
-    },
-    { id: 1,
       name: 'TechSolutions',
       summary: 'Este es un proyecto de comercio electrónico desarrollado en Java utilizando Spring Boot. La aplicación implementa funcionalidades clave para gestionar productos, pedidos, usuarios y el proceso de compra en línea.',
       description: '',
       projectLink: 'https://github.com/IngAamira/TechSolutions',
-      pictures: ["../../../../../assets/imgs/projects/techsolutions/folder.png"],
+      pictures: [
+        "../../../../../assets/imgs/projects/techsolutions/home.png",
+        "../../../../../assets/imgs/projects/techsolutions/folder.png",
+        "../../../../../assets/imgs/projects/techsolutions/db.png",
+        "../../../../../assets/imgs/projects/techsolutions/intro.png",
+        "../../../../../assets/imgs/projects/techsolutions/register.png",
+        "../../../../../assets/imgs/projects/techsolutions/products.png",
+        "../../../../../assets/imgs/projects/techsolutions/inventory.png",
+        "../../../../../assets/imgs/projects/techsolutions/options_admin.png",
+        "../../../../../assets/imgs/projects/techsolutions/options_user.png"
+      ],
       tags: [Tag.JAVA, Tag.SPRING]
     },
-    { id: 2,
+    { id: 1,
       name: 'To-Do App',
       summary: 'This is a simple To-Do application project developed in Angular.',
       description: '',
@@ -47,7 +46,7 @@ export class ProjectsService {
         Tag.BOOTSTRAP
       ]
     },
-    { id: 3,
+    { id: 2,
       name: 'Gifs App',
       summary: 'This is an Angular application that allows users to search and view gifs using the Giphy API.',
       description: '',
@@ -64,7 +63,22 @@ export class ProjectsService {
         Tag.CSS,
         Tag.BOOTSTRAP
       ]
-    }
+    },
+    { id: 3,
+      name: 'World Demographics API',
+      summary: 'WorldDemographicsAPI provides global demographic data for countries and continents. Access population statistics with ease. Ideal for developers and analysts. Explore demographics.',
+      description: '',
+      projectLink: 'https://github.com/IngAamira/WorldDemographicsAPI',
+      pictures: [
+        "../../../../../assets/imgs/projects/worlddemographicsapi/folder.png",
+        "../../../../../assets/imgs/projects/worlddemographicsapi/populations.png",
+        "../../../../../assets/imgs/projects/worlddemographicsapi/world-populations.png"
+      ],
+      tags: [
+        Tag.PYTHON,
+        Tag.HTML
+      ]
+    },
 
   ];
 

@@ -1,4 +1,4 @@
-<div class="container text-center" style="height: 380px; padding-left: 100px; padding-right: 100px;">
+<div class="container text-center">
   <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
 
   <div class="pb-2">
@@ -7,7 +7,9 @@
       <accordion-group [(isOpen)]="isWorkExperienceOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Work Experience</div>
+          <div class="btn-link">
+            <h4>Work Experience</h4>
+          </div>
 
           <div style="width: 10.95px;">
             <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
@@ -35,7 +37,9 @@
       <accordion-group [(isOpen)]="isSectorExperienceOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Sector Experience</div>
+          <div class="btn-link">
+            <h4>Sector Experience</h4>
+          </div>
 
           <div style="width: 10.95px;">
             <div *ngIf="!isSectorExperienceOpen" style="color: white;">></div>
@@ -58,7 +62,9 @@
       <accordion-group [(isOpen)]="isEducationOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Education</div>
+          <div class="btn-link">
+            <h4>Education</h4>
+          </div>
 
           <div style="width: 10.95px;">
             <div *ngIf="!isEducationOpen" style="color: white;">></div>
@@ -82,7 +88,9 @@
       <accordion-group [(isOpen)]="isSkillsOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Skills</div>
+          <div class="btn-link">
+            <h4>Skills</h4>
+          </div>
 
           <div style="width: 10.95px;">
             <div *ngIf="!isSkillsOpen" style="color: white;">></div>
@@ -123,7 +131,9 @@
       <accordion-group [(isOpen)]="isLanguagesOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Languages</div>
+          <div class="btn-link">
+            <h4>Languages</h4>
+          </div>
 
           <div style="width: 10.95px;">
             <div *ngIf="!isLanguagesOpen" style="color: white;">></div>
