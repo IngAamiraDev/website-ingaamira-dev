@@ -9,10 +9,13 @@ import { ProjectsService } from '../../../shared/services/projects.service';
 import { Project } from '../../../shared/models/project';
 import { NgFor } from '@angular/common';
 
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../../shared/services/translation.service';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule, RouterLink, NgFor],
+  imports: [CarouselModule, RouterLink, NgFor, TranslateModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -20,11 +23,20 @@ export class HomeComponent implements OnInit{
 
   featureProject = {} as Project;
 
-  constructor (private titleService: Title, private projectService: ProjectsService, public bsModalRef: BsModalRef) {
+  constructor (
+    private titleService: Title,
+    private projectService: ProjectsService,
+    public bsModalRef: BsModalRef,
+    private translationService: TranslationService
+    ) {
     this.titleService.setTitle('Home')
   }
   ngOnInit(): void {
     this.featureProject = this.projectService.GetProjectById(0);
+  }
+
+  changeLanguage(lang: string): void {
+    this.translationService.changeLanguage(lang);
   }
 
 }

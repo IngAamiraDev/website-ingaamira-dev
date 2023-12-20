@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-
-import { TranslateService, TranslateModule} from '@ngx-translate/core';
+import { TranslateModule} from '@ngx-translate/core';
+import { TranslationService } from '../../../shared/services/translation.service';
 
 @Component({
   selector: 'app-contact',
@@ -12,14 +12,12 @@ import { TranslateService, TranslateModule} from '@ngx-translate/core';
 })
 export class ContactComponent {
 
-  constructor(private titleService: Title, private translate: TranslateService) {
+  constructor(private titleService: Title, private translationService: TranslationService) {
     this.titleService.setTitle('Contact Me');
-    translate.setDefaultLang('en');
-    translate.use('en');
   }
 
   changeLanguage(lang: string): void {
-    this.translate.use(lang);
+    this.translationService.changeLanguage(lang);
   }
 
 }
