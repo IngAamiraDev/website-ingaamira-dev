@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Project } from '../../../shared/models/project';
+
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
+
+import { Project } from '../../../shared/models/project';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 
 @Component({
@@ -29,6 +31,5 @@ export class ProjectCardComponent {
 
     this.bsModalRef = this.modalService.show(ProjectModalComponent, modalOptions);
   };
-
 
 }

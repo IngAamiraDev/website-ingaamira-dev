@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
+import { NgFor } from '@angular/common';
 
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { ProjectsService } from '../../../shared/services/projects.service';
 import { Project } from '../../../shared/models/project';
-import { NgFor } from '@angular/common';
-
-import { TranslateModule } from '@ngx-translate/core';
 import { TranslationService } from '../../../shared/services/translation.service';
 
 @Component({

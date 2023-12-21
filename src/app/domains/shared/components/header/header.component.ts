@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { TranslateModule} from '@ngx-translate/core';
+
 import { TranslationService } from '../../../shared/services/translation.service';
 
 @Component({
@@ -13,7 +14,7 @@ import { TranslationService } from '../../../shared/services/translation.service
 export class HeaderComponent {
 
   constructor(private translationService: TranslationService) {
-    
+
   }
 
   changeLanguage(lang: string): void {

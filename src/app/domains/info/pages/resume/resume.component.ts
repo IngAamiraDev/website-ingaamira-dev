@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 @Component({
