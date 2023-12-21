@@ -9,7 +9,7 @@
         <h2>{{ 'ABOUT_ME' | translate }}</h2>
         <img src="../../../../../assets/imgs/home/profile.jpg" alt="profile picture" width="256" height="256" class="rounded-circle">
         <p style="text-align: left; margin-top: 10px;">
-          {{ 'ABOUT_ME_TEXT_1' | translate }}
+          {{ 'ABOUT_ME_TEXT_1' | translate:{ years: years.toString() } }}
         </p>
         <p style="text-align: left; margin-top: 10px;">
           {{ 'ABOUT_ME_TEXT_2' | translate }}
@@ -37,8 +37,8 @@
         </div>
       </carousel>
 
-      <p class="mt-2">{{ featureProject.summary }}</p>
-      <p>Vist the <a [routerLink]="'/portfolio'" aria-current="page" >Portfolio</a> section to learn more!</p>
+      <p class="mt-2">{{ 'FEATURED_PROJECT_SUMMARY' | translate }}</p>
+      <p> {{ 'FEATURED_PROJECT_INFO' | translate }} <a [routerLink]="'/portfolio'" aria-current="page" >{{'PORTFOLIO' | translate }}</a> </p>
 
     </div>
 

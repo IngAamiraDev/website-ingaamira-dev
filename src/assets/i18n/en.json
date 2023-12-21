@@ -7,10 +7,12 @@
   "CONTACT": "Contact",
 
   "ABOUT_ME": "About Me",
-  "ABOUT_ME_TEXT_1": "With over 10 years in the technology realm, I've honed my ability to craft efficient and scalable solutions. My focus lies in frontend development using technologies such as Angular, HTML, and CSS, alongside building robust backend solutions with Java and Spring Boot. I've also delved into implementing RESTful API services, ensuring adherence to quality standards and modularity.",
+  "ABOUT_ME_TEXT_1": "With over {{years}} years in the technology realm, I've honed my ability to craft efficient and scalable solutions. My focus lies in frontend development using technologies such as Angular, HTML, and CSS, alongside building robust backend solutions with Java and Spring Boot. I've also delved into implementing RESTful API services, ensuring adherence to quality standards and modularity.",
   "ABOUT_ME_TEXT_2": "As a business intelligence specialist, I've ventured into automating processes through Web Scraping with Python and devised Data Warehouse models to provide detailed statistics for BI projects. My knack for collaborating in agile environments, like Scrum, and applying sound development principles enables me to tackle complex challenges with an efficient and quality-oriented approach.",
   "ABOUT_ME_TEXT_3": "My work philosophy is rooted in creating technological solutions that are not only effective from a technical standpoint but also make a positive impact on decision-making and operational efficiency. I'm enthusiastic about continually exploring new technologies and contributing to the success of innovative projects.",
   "FEATURED_PROJECT": "Featured Project",
+  "FEATURED_PROJECT_SUMMARY": "This is an e-commerce project developed in Java using Spring Boot. The application implements key functionalities for managing products, orders, users, and the online purchasing process.",
+  "FEATURED_PROJECT_INFO": "Visit the section to learn more!",
 
   "CONTACT_ME": "Contact Me",
   "CONTACT_DESCRIPTION": "Feel free to reach out to me for any inquiries or collaboration opportunities",
