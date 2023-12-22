@@ -10,6 +10,11 @@ export class TranslationService {
   private currentLanguageSubject: BehaviorSubject<string> = new BehaviorSubject<string>('en');
   currentLanguage$ = this.currentLanguageSubject.asObservable();
 
+  private pdfPaths: Record<string, string> = {
+    en: '../../../../assets/docs/CV_Dev_en.pdf',
+    es: '../../../../assets/docs/CV_Dev_es.pdf'
+  };
+
   constructor(private translate: TranslateService) {
     this.initializeTranslation();
   }
@@ -30,6 +35,11 @@ export class TranslationService {
 
   getInstantTranslation(key: string): string {
     return this.translate.instant(key);
+  }
+
+  getPdfPath(): string {
+    const currentLanguage = this.currentLanguageSubject.getValue();
+    return this.pdfPaths[currentLanguage];
   }
 
 }
