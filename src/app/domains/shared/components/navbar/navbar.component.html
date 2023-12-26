@@ -1,4 +1,5 @@
 <div class="nav-box">
+
   <div class="nav-item" tabindex="0">
     <a
       [routerLink]="'/'"
@@ -6,8 +7,9 @@
       [routerLinkActiveOptions]="{ exact: true }"
       class="block navigation-link"
       aria-current="page"
-    >Home</a>
+    >{{ 'HOME' | translate }}</a>
   </div>
+
   <div class="nav-item" tabindex="0">
     <a
       [routerLink]="'/portfolio'"
@@ -15,8 +17,9 @@
       [routerLinkActiveOptions]="{ exact: true }"
       class="block navigation-link"
       aria-current="page"
-    >Portfolio</a>
+    >{{ 'PORTFOLIO' | translate }}</a>
   </div>
+
   <div class="nav-item" tabindex="0">
     <a
       [routerLink]="'/resume'"
@@ -24,8 +27,9 @@
       [routerLinkActiveOptions]="{ exact: true }"
       class="block navigation-link"
       aria-current="page"
-    >Resume</a>
+    >{{ 'RESUME' | translate }}</a>
   </div>
+
   <div class="nav-item" tabindex="0">
     <a
       [routerLink]="'/contact'"
@@ -33,6 +37,7 @@
       [routerLinkActiveOptions]="{ exact: true }"
       class="block navigation-link"
       aria-current="page"
-    >Contact</a>
+    >{{ 'CONTACT' | translate }}</a>
   </div>
+
 </div>
