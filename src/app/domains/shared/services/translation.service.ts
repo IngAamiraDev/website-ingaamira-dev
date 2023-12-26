@@ -10,9 +10,14 @@ export class TranslationService {
   private currentLanguageSubject: BehaviorSubject<string> = new BehaviorSubject<string>('en');
   currentLanguage$ = this.currentLanguageSubject.asObservable();
 
-  private pdfPaths: Record<string, string> = {
+  private pdfPathsDev: Record<string, string> = {
     en: '../../../../assets/docs/CV_Dev_en.pdf',
     es: '../../../../assets/docs/CV_Dev_es.pdf'
+  };
+
+  private pdfPathsData: Record<string, string> = {
+    en: '../../../../assets/docs/CV_Data_en.pdf',
+    es: '../../../../assets/docs/CV_Data_es.pdf'
   };
 
   constructor(private translate: TranslateService) {
@@ -37,9 +42,14 @@ export class TranslationService {
     return this.translate.instant(key);
   }
 
-  getPdfPath(): string {
+  getPdfPathDev(): string {
     const currentLanguage = this.currentLanguageSubject.getValue();
-    return this.pdfPaths[currentLanguage];
+    return this.pdfPathsDev[currentLanguage];
+  }
+
+  getPdfPathData(): string {
+    const currentLanguage = this.currentLanguageSubject.getValue();
+    return this.pdfPathsData[currentLanguage];
   }
 
 }

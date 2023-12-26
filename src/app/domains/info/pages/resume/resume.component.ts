@@ -32,11 +32,20 @@ export class ResumeComponent {
     this.titleService.setTitle('Resume');
   }
 
-  DownloadFile() {
+  DownloadFileDev() {
     const link = this.renderer.createElement('a');
     link.setAttribute('target','_blank');
-    link.setAttribute('href', this.translationService.getPdfPath());
-    //link.setAttribute('download','CV_Dev.pdf');
+    link.setAttribute('href', this.translationService.getPdfPathDev());
+    //link.setAttribute('download', this.translationService.getPdfPathDev());
+    link.click();
+    link.remove();
+  }
+
+  DownloadFileData() {
+    const link = this.renderer.createElement('a');
+    link.setAttribute('target','_blank');
+    link.setAttribute('href', this.translationService.getPdfPathData());
+    //link.setAttribute('download', this.translationService.getPdfPathData());
     link.click();
     link.remove();
   }

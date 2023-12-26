@@ -1,5 +1,9 @@
 <div class="container text-center">
-  <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">{{ 'DOWNLOAD_PDF_RESUME' | translate }}</button>
+
+  <div class="nav-box">
+    <button (click)="DownloadFileDev()" class="btn btn-primary mb-5 shadow border">{{ 'DOWNLOAD_PDF_RESUME_DEV' | translate }}</button>
+    <button (click)="DownloadFileData()" class="btn btn-primary mb-5 shadow border">{{ 'DOWNLOAD_PDF_RESUME_DATA' | translate }}</button>
+  </div>
 
   <div class="pb-2">
     <accordion [isAnimated]="true" class="shadow">
@@ -135,7 +139,7 @@
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
           <div class="btn-link">
-            <h4>{{ 'SKILLS_DE' | translate }}</h4>
+            <h4>{{ 'SKILLS_DATA' | translate }}</h4>
           </div>
 
           <div style="width: 10.95px;">
@@ -225,7 +229,7 @@
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
           <div class="btn-link">
-            <h4>{{ 'SKILLS_SD' | translate }}</h4>
+            <h4>{{ 'SKILLS_DEV' | translate }}</h4>
           </div>
 
           <div style="width: 10.95px;">
