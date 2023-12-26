@@ -131,45 +131,106 @@
         </div>
       </accordion-group>
 
-      <accordion-group [(isOpen)]="isEducationOpen">
+      <accordion-group [(isOpen)]="isSkillsDeOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
           <div class="btn-link">
-            <h4>{{ 'EDUCATION' | translate }}</h4>
+            <h4>{{ 'SKILLS_DE' | translate }}</h4>
           </div>
 
           <div style="width: 10.95px;">
-            <div *ngIf="!isEducationOpen" style="color: white;">></div>
-            <div *ngIf="isEducationOpen" style="color: white;">v</div>
+            <div *ngIf="!isSkillsDeOpen" style="color: white;">></div>
+            <div *ngIf="isSkillsDeOpen" style="color: white;">v</div>
           </div>
         </button>
 
-        <div style="text-align: left;">
-          <h2 class="text-primary">{{ 'UNIVERSITY_TITLE_1' | translate }}</h2>
-          <h3 class="text-secondary">{{ 'UNIVERSITY_NAME' | translate }}</h3>
-          <h4 class="mb-0">{{ 'DATE' | translate }}: 07/2018 - 08/2019</h4>
+        <div class="row" style="text-align: left">
+          <div class="col">
+            <h3>{{ 'DATA_EXTRACTION_TOOLS' | translate }}:</h3>
+            <ul>
+              <li>APIs</li>
+              <li>{{ 'WEB_PAGES' | translate }}</li>
+              <li>{{ 'FILES' | translate }}</li>
+              <li>{{ 'DATABASES' | translate }}</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>{{ 'DATA_TRANSFORMATION_TOOLS' | translate }}:</h3>
+            <ul>
+              <li>Python</li>
+              <li>R</li>
+              <li>Java</li>
+              <li>SQL</li>
+              <li>SQL Server Integration Services (SSIS)</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>{{ 'DATA_LOADING_TOOLS' | translate }}:</h3>
+            <ul>
+              <li>{{ 'DATA_WAREHOUSE' | translate }}</li>
+              <li>Data Mart</li>
+              <li>{{ 'DATA_LAKE' | translate }}</li>
+              <li>Amazon Redshift</li>
+              <li>{{ 'SQL_NOSQL' | translate }}</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>{{ 'DATA_ANALYSIS_TOOLS' | translate }}:</h3>
+            <ul>
+              <li>SQL Server Analysis Services (SSAS)</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>{{ 'DATA_VISUALIZATION_TOOLS' | translate }}:</h3>
+            <ul>
+              <li>Power BI</li>
+              <li>Excel</li>
+              <li>Matplotlib</li>
+              <li>Html</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>{{ 'DATA_REPORTING_TOOLS' | translate }}:</h3>
+            <ul>
+              <li>Power BI</li>
+              <li>SQL Server Reporting Services (SSRS)</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h3>{{ 'OTHER_SKILLS' | translate }}:</h3>
+            <ul>
+              <li>{{ 'BI_TOOLS' | translate }}</li>
+              <li>Git</li>
+              <li>DevOps</li>
+              <li>DataOps</li>
+              <li>ETL</li>
+              <li>KPI</li>
+              <li>PL/SQL</li>
+              <li>{{ 'OLAP' | translate }}</li>
+              <li>{{ 'AGILE' | translate }}</li>
+            </ul>
+          </div>
+
         </div>
-
-        <hr/>
-
-        <div style="text-align: left;">
-          <h2 class="text-primary">{{ 'UNIVERSITY_TITLE_2' | translate }}</h2>
-          <h3 class="text-secondary">{{ 'UNIVERSITY_NAME' | translate }}</h3>
-          <h4 class="mb-0">{{ 'DATE' | translate }}: 12/2014 - 11/2017</h4>
-        </div>
-
       </accordion-group>
 
-      <accordion-group [(isOpen)]="isSkillsOpen">
+      <accordion-group [(isOpen)]="isSkillsSdOpen">
         <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
           <div style="visibility: hidden;">></div>
           <div class="btn-link">
-            <h4>{{ 'SKILLS' | translate }}</h4>
+            <h4>{{ 'SKILLS_SD' | translate }}</h4>
           </div>
 
           <div style="width: 10.95px;">
-            <div *ngIf="!isSkillsOpen" style="color: white;">></div>
-            <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+            <div *ngIf="!isSkillsSdOpen" style="color: white;">></div>
+            <div *ngIf="isSkillsSdOpen" style="color: white;">v</div>
           </div>
         </button>
 
@@ -213,27 +274,58 @@
           <div class="col">
             <h3>{{ 'TESTING' | translate }}:</h3>
             <ul>
-              <li>Unit Test</li>
-              <li>Performance Test</li>
+              <li>{{ 'UNIT_TEST' | translate }}</li>
+              <li>{{ 'INTEGRATION_TEST' | translate }}</li>
+              <li>{{ 'PERFORMANCE_TEST' | translate }}</li>
             </ul>
           </div>
 
           <div class="col">
             <h3>{{ 'OTHER_SKILLS' | translate }}:</h3>
             <ul>
-              <li>Source Control via Git</li>
-              <li>Clean Architecture</li>
-              <li>Clean Code</li>
-              <li>Principles SOLID</li>
+              <li>Git</li>
+              <li>{{ 'CLEAN_ARCHITECTURE' | translate }}</li>
+              <li>{{ 'CLEAN_CODE' | translate }}</li>
+              <li>SOLID</li>
               <li>API Rest</li>
               <li>Gradle</li>
               <li>Maven</li>
-              <li>DOM y Browser Engine</li>
-              <li>Agile Development</li>
+              <li>{{ 'DOM' | translate }}</li>
+              <li>DevOps</li>
+              <li>{{ 'AGILE' | translate }}</li>
             </ul>
           </div>
 
         </div>
+      </accordion-group>
+
+      <accordion-group [(isOpen)]="isEducationOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;">></div>
+          <div class="btn-link">
+            <h4>{{ 'EDUCATION' | translate }}</h4>
+          </div>
+
+          <div style="width: 10.95px;">
+            <div *ngIf="!isEducationOpen" style="color: white;">></div>
+            <div *ngIf="isEducationOpen" style="color: white;">v</div>
+          </div>
+        </button>
+
+        <div style="text-align: left;">
+          <h2 class="text-primary">{{ 'UNIVERSITY_TITLE_1' | translate }}</h2>
+          <h3 class="mb-0">{{ 'UNIVERSITY_NAME' | translate }}</h3>
+          <h4 class="text-secondary">{{ 'DATE' | translate }}: 07/2018 - 08/2019</h4>
+        </div>
+
+        <hr/>
+
+        <div style="text-align: left;">
+          <h2 class="text-primary">{{ 'UNIVERSITY_TITLE_2' | translate }}</h2>
+          <h3 class="mb-0">{{ 'UNIVERSITY_NAME' | translate }}</h3>
+          <h4 class="text-secondary">{{ 'DATE' | translate }}: 12/2014 - 11/2017</h4>
+        </div>
+
       </accordion-group>
 
       <accordion-group [(isOpen)]="isLanguagesOpen">
@@ -251,10 +343,11 @@
 
         <div style="text-align: left;">
           <ul>
-            <li>Native: Spanish</li>
-            <li>English Level: A2/B1</li>
+            <li><strong>{{ 'SPANISH' | translate }}:</strong> {{ 'SPANISH_PROFICIENCY' | translate }}</li>
+            <li><strong>{{ 'ENGLISH' | translate }}:</strong> {{ 'ENGLISH_PROFICIENCY' | translate }}</li>
           </ul>
         </div>
+
       </accordion-group>
 
     </accordion>

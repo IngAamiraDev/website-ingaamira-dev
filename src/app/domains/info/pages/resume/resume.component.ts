@@ -19,7 +19,8 @@ export class ResumeComponent {
   isWorkExperienceOpen: boolean = false;
   isSectorExperienceOpen: boolean = false;
   isEducationOpen:boolean = false;
-  isSkillsOpen: boolean = false;
+  isSkillsSdOpen: boolean = false;
+  isSkillsDeOpen: boolean = false;
   isLanguagesOpen: boolean = false;
 
   constructor (
