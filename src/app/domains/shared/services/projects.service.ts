@@ -16,15 +16,15 @@ export class ProjectsService {
       description: '',
       projectLink: 'https://github.com/IngAamira/TechSolutions',
       pictures: [
-        "../../../../../assets/imgs/projects/techsolutions/home.png",
-        "../../../../../assets/imgs/projects/techsolutions/folder.png",
-        "../../../../../assets/imgs/projects/techsolutions/db.png",
-        "../../../../../assets/imgs/projects/techsolutions/intro.png",
-        "../../../../../assets/imgs/projects/techsolutions/register.png",
-        "../../../../../assets/imgs/projects/techsolutions/products.png",
-        "../../../../../assets/imgs/projects/techsolutions/inventory.png",
-        "../../../../../assets/imgs/projects/techsolutions/options_admin.png",
-        "../../../../../assets/imgs/projects/techsolutions/options_user.png"
+        "assets/imgs/projects/techsolutions/home.png",
+        "assets/imgs/projects/techsolutions/folder.png",
+        "assets/imgs/projects/techsolutions/db.png",
+        "assets/imgs/projects/techsolutions/intro.png",
+        "assets/imgs/projects/techsolutions/register.png",
+        "assets/imgs/projects/techsolutions/products.png",
+        "assets/imgs/projects/techsolutions/inventory.png",
+        "assets/imgs/projects/techsolutions/options_admin.png",
+        "assets/imgs/projects/techsolutions/options_user.png"
       ],
       tags: [Tag.JAVA, Tag.SPRING]
     },
@@ -34,9 +34,9 @@ export class ProjectsService {
       description: '',
       projectLink: 'https://ingaamira.github.io/todo-app/',
       pictures: [
-        "../../../../../assets/imgs/projects/todo-app/home.png",
-        "../../../../../assets/imgs/projects/todo-app/task.png",
-        "../../../../../assets/imgs/projects/todo-app/filter.png"
+        "assets/imgs/projects/todo-app/home.png",
+        "assets/imgs/projects/todo-app/task.png",
+        "assets/imgs/projects/todo-app/filter.png"
       ],
       tags: [
         Tag.TYPESCRIPT,
@@ -52,9 +52,9 @@ export class ProjectsService {
       description: '',
       projectLink: 'https://ingaamira.github.io/gifs-app/',
       pictures: [
-        "../../../../../assets/imgs/projects/gifs-app/home.png",
-        "../../../../../assets/imgs/projects/gifs-app/search.png",
-        "../../../../../assets/imgs/projects/gifs-app/filter.png"
+        "assets/imgs/projects/gifs-app/home.png",
+        "assets/imgs/projects/gifs-app/search.png",
+        "assets/imgs/projects/gifs-app/filter.png"
       ],
       tags: [
         Tag.TYPESCRIPT,
@@ -70,9 +70,9 @@ export class ProjectsService {
       description: '',
       projectLink: 'https://github.com/IngAamira/WorldDemographicsAPI',
       pictures: [
-        "../../../../../assets/imgs/projects/worlddemographicsapi/folder.png",
-        "../../../../../assets/imgs/projects/worlddemographicsapi/populations.png",
-        "../../../../../assets/imgs/projects/worlddemographicsapi/world-populations.png"
+        "assets/imgs/projects/worlddemographicsapi/folder.png",
+        "assets/imgs/projects/worlddemographicsapi/populations.png",
+        "assets/imgs/projects/worlddemographicsapi/world-populations.png"
       ],
       tags: [
         Tag.PYTHON,
