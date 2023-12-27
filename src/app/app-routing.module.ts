@@ -33,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: NotFoundComponent, pathMatch: 'full', redirectTo: 'home'
+    component: NotFoundComponent, pathMatch: 'full', redirectTo: ''
   }
 ];
 
