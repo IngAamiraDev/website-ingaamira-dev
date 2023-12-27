@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LayoutComponent } from './domains/shared/components/layout/layout.component';
-import { NotFoundComponent } from './domains/info/pages/not-found/not-found.component';
+//import { NotFoundComponent } from './domains/info/pages/not-found/not-found.component';
 import { HomeComponent } from './domains/info/pages/home/home.component';
 import { PortfolioComponent } from './domains/info/pages/portfolio/portfolio.component';
 import { ResumeComponent } from './domains/info/pages/resume/resume.component';
