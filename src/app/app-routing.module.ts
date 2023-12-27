@@ -33,12 +33,12 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: NotFoundComponent, pathMatch: 'full'
+    component: NotFoundComponent, pathMatch: 'full', redirectTo: 'home'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot( routes, {useHash: true} ) ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
