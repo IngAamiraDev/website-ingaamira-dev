@@ -32,8 +32,7 @@ const routes: Routes = [
   ]
   },
   {
-    path: '**',
-    component: NotFoundComponent, pathMatch: 'full', redirectTo: ''
+    path: '**', pathMatch: 'full', redirectTo: ''
   }
 ];
 
