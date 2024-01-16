@@ -10,12 +10,10 @@
           "skipTests": true
         },
         "@schematics/angular:component": {
-          "skipTests": true,
-          "standalone": false
+          "skipTests": true
         },
         "@schematics/angular:directive": {
-          "skipTests": true,
-          "standalone": false
+          "skipTests": true
         },
         "@schematics/angular:guard": {
           "skipTests": true
@@ -24,8 +22,7 @@
           "skipTests": true
         },
         "@schematics/angular:pipe": {
-          "skipTests": true,
-          "standalone": false
+          "skipTests": true
         },
         "@schematics/angular:resolver": {
           "skipTests": true
@@ -121,6 +118,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "789ce590-8dc5-42d0-a7cf-c317ca10183d"
   }
 }
