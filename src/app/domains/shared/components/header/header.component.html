@@ -1,7 +1,7 @@
 <div class="header">
 
-  <h1> Andres </h1>
-  <h3> Software Developer </h3>
+  <h1> {{ 'NAME' | translate }} </h1>
+  <h3> {{ 'TITLE' | translate }} </h3>
 
   <div class="language-selector bottom-right">
     <button *ngFor="let item of menuItemsHeader()"
