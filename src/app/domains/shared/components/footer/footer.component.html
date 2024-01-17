@@ -1,1 +1,18 @@
-<p>footer works!</p>
+<footer class="footer">
+
+  <div class="text-center info">
+    <p>🚀  🚀</p>
+  </div>
+
+  <div class="text-center social-links">
+    <a *ngFor="let item of menuItemsFooter()"
+      [href]="item.url" target="_blank" >
+      <img [src]="item.img" [alt]="item.flag" >
+    </a>
+  </div>
+
+  <div class="text-center current-year">
+    <p>&copy; {{ currentYear }} </p>
+  </div>
+
+</footer>

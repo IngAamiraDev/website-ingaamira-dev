@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
-
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
+    ModalModule.forRoot(),
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    AccordionModule.forRoot()
+  ],
+  exports: [
+    ModalModule,
+    CarouselModule,
+    CollapseModule,
+    AccordionModule
   ]
 })
 export class NgxBootstrapModule { }
